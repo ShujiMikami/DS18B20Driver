@@ -100,4 +100,6 @@ ONE_WIRE_STATUS_t SetResolution(ONE_WIRE_ROM_CODE_t romCode, RESOLUTION_t resolu
 	scratchPadValue.Configuration_Register = CONFIGURATION_DEFAULT_VALUE | (resolution << RESOLUTION_BITPOS);
 
 	WriteScratchPad(romCode, scratchPadValue);
+
+	//TODO resultを返すように修正
 }
