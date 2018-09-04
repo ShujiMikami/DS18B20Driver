@@ -93,7 +93,7 @@ void ReadPowerSupply(ONE_WIRE_ROM_CODE_t romCode)
 {
 
 }
-ONE_WIRE_STATUS_t SetResolution_t(ONE_WIRE_ROM_CODE_t romCode, RESOLUTION_t resolution)
+ONE_WIRE_STATUS_t SetResolution(ONE_WIRE_ROM_CODE_t romCode, RESOLUTION_t resolution)
 {
 	ScratchPadData_t scratchPadValue;
 
