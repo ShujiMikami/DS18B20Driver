@@ -93,13 +93,11 @@ void ReadPowerSupply(ONE_WIRE_ROM_CODE_t romCode)
 {
 
 }
-ONE_WIRE_STATUS_t SetResolution(ONE_WIRE_ROM_CODE_t romCode, RESOLUTION_t resolution)
+void SetResolution(ONE_WIRE_ROM_CODE_t romCode, RESOLUTION_t resolution)
 {
 	ScratchPadData_t scratchPadValue;
 
 	scratchPadValue.Configuration_Register = CONFIGURATION_DEFAULT_VALUE | (resolution << RESOLUTION_BITPOS);
 
 	WriteScratchPad(romCode, scratchPadValue);
-
-	//TODO resultを返すように修正
 }
