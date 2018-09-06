@@ -26,7 +26,7 @@ typedef enum{
 }RESOLUTION_t;
 
 ONE_WIRE_STATUS_t Convert(ONE_WIRE_ROM_CODE_t romCode);
-ONE_WIRE_STATUS_t SetResolution_t(ONE_WIRE_ROM_CODE_t romCode, RESOLUTION_t resolution);
+void SetResolution(ONE_WIRE_ROM_CODE_t romCode, RESOLUTION_t resolution);
 void WriteScratchPad(ONE_WIRE_ROM_CODE_t romCode, ScratchPadData_t dataToWrite);
 ScratchPadData_t ReadScratchPad(ONE_WIRE_ROM_CODE_t romCode);
 void RecallE2(ONE_WIRE_ROM_CODE_t romCode);
